@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/earth_portrait"
@@ -38,7 +37,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,7 +49,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="C"
+            android:text="@string/_c"
             android:textSize="40sp" />
 
         <Button
@@ -61,7 +59,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="CE"
+            android:text="@string/_ce"
             android:textSize="40sp" />
 
         <Button
@@ -71,7 +69,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="*"
+            android:text="@string/_multi"
             android:textSize="40sp" />
 
         <Button
@@ -81,7 +79,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="/"
+            android:text="@string/_split"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -97,7 +95,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="1"
+            android:text="@string/_1"
             android:textSize="40sp" />
 
         <Button
@@ -107,7 +105,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="2"
+            android:text="@string/_2"
             android:textSize="40sp" />
 
         <Button
@@ -117,7 +115,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="3"
+            android:text="@string/_3"
             android:textSize="40sp" />
 
         <Button
@@ -127,7 +125,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="+"
+            android:text="@string/_summ"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -143,7 +141,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="4"
+            android:text="@string/_4"
             android:textSize="40sp" />
 
         <Button
@@ -153,7 +151,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="5"
+            android:text="@string/_5"
             android:textSize="40sp" />
 
         <Button
@@ -163,7 +161,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="6"
+            android:text="@string/_6"
             android:textSize="40sp" />
 
         <Button
@@ -173,7 +171,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="-"
+            android:text="@string/_sub"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -189,7 +187,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="7"
+            android:text="@string/_7"
             android:textSize="40sp" />
 
         <Button
@@ -199,7 +197,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="8"
+            android:text="@string/_8"
             android:textSize="40sp" />
 
         <Button
@@ -209,7 +207,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="9"
+            android:text="@string/_9"
             android:textSize="40sp" />
 
         <Button
@@ -219,7 +217,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="%"
+            android:text="@string/_percent"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -236,7 +234,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="0"
+            android:text="@string/_0"
             android:textSize="40sp" />
 
 
@@ -247,7 +245,7 @@
             android:layout_weight="3"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="="
+            android:text="@string/_smo"
             android:textSize="40sp" />
 
         <Button
@@ -257,7 +255,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
-            android:text="."
+            android:text="@string/_point"
             android:textSize="40sp" />
     </LinearLayout>
 
