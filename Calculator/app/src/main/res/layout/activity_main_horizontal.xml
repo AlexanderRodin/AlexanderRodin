@@ -5,16 +5,6 @@
     android:background="@drawable/earth_portrait"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,8 +12,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/text_output"
@@ -47,45 +36,45 @@
             android:id="@+id/delete_character"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_c"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/delete_everything"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_ce"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/_multiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_multi"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/to_split"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_split"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,45 +86,45 @@
             android:id="@+id/one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_1"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_2"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_3"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/fold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_summ"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
     </LinearLayout>
 
     <LinearLayout
@@ -147,45 +136,45 @@
             android:id="@+id/four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_4"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_5"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_6"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/subtract"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_sub"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
     </LinearLayout>
 
     <LinearLayout
@@ -197,45 +186,45 @@
             android:id="@+id/seven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_7"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/eight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_8"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/nine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_9"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_percent"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
     </LinearLayout>
 
 
@@ -248,35 +237,35 @@
             android:id="@+id/zero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_0"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
 
         <Button
             android:id="@+id/smooth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="3"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_smo"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
 
         <Button
             android:id="@+id/point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            android:layout_margin="@dimen/btn_margin_horizontal"
             android:layout_weight="1"
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_point"
-            android:textSize="@dimen/butn_text_size" />
+            android:textSize="@dimen/butn_text_size_horizontal" />
     </LinearLayout>
 
     <Space

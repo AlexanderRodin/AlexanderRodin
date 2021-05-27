@@ -8,10 +8,15 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    StringBuilder newString = new StringBuilder();
+    StringBuilder number = new StringBuilder();
     TextView textOutput;
     Button deleteCharacter, deleteEverything, multiply, toSplit, fold, subtract, percent, smooth, point;
     Button one, two, three, four, five, six, seven, eight, nine, zero;
+    int index;
+
+    int numOne, numTwo, numThree, numFour, numFive;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,45 +34,81 @@ public class MainActivity extends AppCompatActivity {
         eight = (Button) findViewById(R.id.eight);
         nine = (Button) findViewById(R.id.nine);
         zero = (Button) findViewById(R.id.zero);
+        deleteCharacter = (Button) findViewById(R.id.delete_character);
+        deleteEverything = (Button) findViewById(R.id.delete_everything);
+        multiply = (Button) findViewById(R.id._multiply);
+        toSplit = (Button) findViewById(R.id.to_split);
+        fold = (Button) findViewById(R.id.fold);
+        subtract = (Button) findViewById(R.id.subtract);
+        percent = (Button) findViewById(R.id._percent);
+        smooth = (Button) findViewById(R.id.smooth);
+        point = (Button) findViewById(R.id.point);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.one:
-                        textOutput.setText("1");
+                        addToString("1");
                         break;
                     case R.id.two:
-                        textOutput.setText("2");
+                        addToString("2");
                         break;
                     case R.id.three:
-                        textOutput.setText("3");
+                        addToString("3");
                         break;
                     case R.id.four:
-                        textOutput.setText("4");
+                        addToString("4");
                         break;
                     case R.id.five:
-                        textOutput.setText("5");
+                        addToString("5");
                         break;
                     case R.id.six:
-                        textOutput.setText("6");
+                        addToString("6");
                         break;
                     case R.id.seven:
-                        textOutput.setText("7");
+                        addToString("7");
                         break;
                     case R.id.eight:
-                        textOutput.setText("8");
+                        addToString("8");
                         break;
                     case R.id.nine:
-                        textOutput.setText("9");
+                        addToString("9");
                         break;
                     case R.id.zero:
-                        textOutput.setText("0");
+                        addToString("0");
+                        break;
+                    case R.id.delete_character:
+                        lastCharacter();
+                        break;
+                    case R.id.delete_everything:
+                        deleteString();
+                        break;
+                    case R.id._multiply:
+                        addToString("*");
+                        break;
+                    case R.id.to_split:
+                        addToString("/");
+                        break;
+                    case R.id.fold:
+                        addToString("+");
+//                        addIndex();
+                        break;
+                    case R.id.subtract:
+                        addToString("-");
+                        break;
+                    case R.id._percent:
+//                        addToString("%");
+                        break;
+                    case R.id.smooth:
+//                        addToString("=");
+                        break;
+                    case R.id.point:
+//                        addToString(".");
                         break;
                 }
             }
         };
-
         one.setOnClickListener(onClickListener);
         two.setOnClickListener(onClickListener);
         three.setOnClickListener(onClickListener);
@@ -78,5 +119,70 @@ public class MainActivity extends AppCompatActivity {
         eight.setOnClickListener(onClickListener);
         nine.setOnClickListener(onClickListener);
         zero.setOnClickListener(onClickListener);
+        deleteCharacter.setOnClickListener(onClickListener);
+        deleteEverything.setOnClickListener(onClickListener);
+        multiply.setOnClickListener(onClickListener);
+        toSplit.setOnClickListener(onClickListener);
+        fold.setOnClickListener(onClickListener);
+        subtract.setOnClickListener(onClickListener);
+        percent.setOnClickListener(onClickListener);
+        smooth.setOnClickListener(onClickListener);
+        point.setOnClickListener(onClickListener);
     }
+
+    public void parseNumber() {
+        if (numOne == 0) {
+            numOne = Integer.parseInt(String.valueOf(number));
+        } else if (numTwo == 0) {
+            numTwo = Integer.parseInt(String.valueOf(number));
+        } else if (numThree == 0) {
+            numThree = Integer.parseInt(String.valueOf(number));
+        } else if (numFour == 0) {
+            numFour = Integer.parseInt(String.valueOf(number));
+        } else if (numFive == 0) {
+            numFive = Integer.parseInt(String.valueOf(number));
+        }
+    }
+
+    // Отображение
+    public void addToString(String s) {
+        newString.append(s);
+        textOutput.setText(newString);
+    }
+
+    public void addNum(int i) {
+        number.append(i);
+    }
+
+    // Удаление
+    public void deleteString() {
+        newString.delete(0, newString.length());
+//        number.delete(0, number.length());
+        textOutput.setText(newString);
+    }
+
+    // Удаление всего
+    public void lastCharacter() {
+        newString.deleteCharAt(newString.length() - 1);
+//        number.deleteCharAt(number.length() - 1);
+        textOutput.setText(newString);
+    }
+
+    // Строку в число
+    public void numToInt() {
+        index = Integer.parseInt(String.valueOf(number));
+    }
+
+    public void addIndex() {
+        index = newString.length() - 1;
+        textOutput.setText(index);
+    }
+
+    //Результат
+    public void result() {
+        String str = String.valueOf(newString);
+        char[] arrResult = str.toCharArray();
+
+    }
+
 }
