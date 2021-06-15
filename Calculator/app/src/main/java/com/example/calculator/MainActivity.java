@@ -2,10 +2,15 @@ package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.ToggleButton;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     StringBuilder newString = new StringBuilder();
@@ -13,16 +18,18 @@ public class MainActivity extends AppCompatActivity {
     TextView textOutput;
     Button deleteCharacter, deleteEverything, multiply, toSplit, fold, subtract, percent, smooth, point;
     Button one, two, three, four, five, six, seven, eight, nine, zero;
-    int index;
+    ToggleButton togBtn;
 
-    int numOne, numTwo, numThree, numFour, numFive;
 
+    ArrayList listNumber = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
+
+        setContentView(R.layout.activity_main);
+        togBtn = (ToggleButton) findViewById(R.id.action_toggle);
         textOutput = (TextView) findViewById(R.id.text_output);
         one = (Button) findViewById(R.id.one);
         two = (Button) findViewById(R.id.two);
@@ -92,10 +99,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.fold:
                         addToString("+");
+
 //                        addIndex();
                         break;
                     case R.id.subtract:
                         addToString("-");
+
                         break;
                     case R.id._percent:
 //                        addToString("%");
@@ -106,9 +115,17 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.point:
 //                        addToString(".");
                         break;
+
                 }
             }
         };
+        CompoundButton.OnCheckedChangeListener onCheckedChangeListener = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                onPointerCaptureChanged(isChecked);
+            }
+        };
+
         one.setOnClickListener(onClickListener);
         two.setOnClickListener(onClickListener);
         three.setOnClickListener(onClickListener);
@@ -128,20 +145,9 @@ public class MainActivity extends AppCompatActivity {
         percent.setOnClickListener(onClickListener);
         smooth.setOnClickListener(onClickListener);
         point.setOnClickListener(onClickListener);
-    }
+        togBtn.setOnCheckedChangeListener(onCheckedChangeListener);
 
-    public void parseNumber() {
-        if (numOne == 0) {
-            numOne = Integer.parseInt(String.valueOf(number));
-        } else if (numTwo == 0) {
-            numTwo = Integer.parseInt(String.valueOf(number));
-        } else if (numThree == 0) {
-            numThree = Integer.parseInt(String.valueOf(number));
-        } else if (numFour == 0) {
-            numFour = Integer.parseInt(String.valueOf(number));
-        } else if (numFive == 0) {
-            numFive = Integer.parseInt(String.valueOf(number));
-        }
+
     }
 
     // Отображение
@@ -157,32 +163,28 @@ public class MainActivity extends AppCompatActivity {
     // Удаление
     public void deleteString() {
         newString.delete(0, newString.length());
-//        number.delete(0, number.length());
         textOutput.setText(newString);
     }
 
     // Удаление всего
     public void lastCharacter() {
         newString.deleteCharAt(newString.length() - 1);
-//        number.deleteCharAt(number.length() - 1);
         textOutput.setText(newString);
     }
 
-    // Строку в число
-    public void numToInt() {
-        index = Integer.parseInt(String.valueOf(number));
+
+    @Override
+    public void onPointerCaptureChanged(boolean isChecked) {
+        if (isChecked) {
+            this.finish();
+            this.setTheme(R.style.AppThemeDark);
+            this.startActivity(new Intent(this, this.getClass()));
+        } else {
+            this.finish();
+            this.setTheme(R.style.AppThemeLight);
+            this.startActivity(new Intent(this, this.getClass()));
+        }
     }
 
-    public void addIndex() {
-        index = newString.length() - 1;
-        textOutput.setText(index);
-    }
-
-    //Результат
-    public void result() {
-        String str = String.valueOf(newString);
-        char[] arrResult = str.toCharArray();
-
-    }
 
 }

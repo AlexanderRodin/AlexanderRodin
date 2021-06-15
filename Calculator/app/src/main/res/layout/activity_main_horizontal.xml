@@ -41,7 +41,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_c"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/delete_everything"
@@ -52,7 +52,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_ce"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/_multiply"
@@ -63,7 +63,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_multi"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/to_split"
@@ -74,7 +74,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_split"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
     </LinearLayout>
 
     <LinearLayout
@@ -91,7 +91,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_1"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/two"
@@ -102,7 +102,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_2"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/three"
@@ -113,7 +113,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_3"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/fold"
@@ -124,7 +124,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_summ"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
     </LinearLayout>
 
     <LinearLayout
@@ -141,7 +141,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_4"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/five"
@@ -152,7 +152,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_5"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/six"
@@ -163,7 +163,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_6"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/subtract"
@@ -174,7 +174,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_sub"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
     </LinearLayout>
 
     <LinearLayout
@@ -191,7 +191,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_7"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/eight"
@@ -202,7 +202,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_8"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/nine"
@@ -213,7 +213,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_9"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/_percent"
@@ -224,7 +224,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_percent"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
     </LinearLayout>
 
 
@@ -242,7 +242,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_0"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
 
         <Button
@@ -254,7 +254,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_smo"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
 
         <Button
             android:id="@+id/point"
@@ -265,7 +265,7 @@
             android:backgroundTint="@color/button_color"
             android:fontFamily="@font/allerta_stencil"
             android:text="@string/_point"
-            android:textSize="@dimen/butn_text_size_horizontal" />
+            android:textSize="@dimen/button_text_size_horizontal" />
     </LinearLayout>
 
     <Space
