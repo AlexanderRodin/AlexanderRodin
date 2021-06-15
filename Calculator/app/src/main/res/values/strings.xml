@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="_textView">0</string>
-    <string name="_ce">CE</string>
+    <string name="_textView"></string>
+    <string name="_ce">ce</string>
     <string name="_c">C</string>
     <string name="_multi">*</string>
     <string name="_split">/</string>
